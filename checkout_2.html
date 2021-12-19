@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="sv">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -13,8 +12,33 @@
     <h2>Betalning</h2>
     <div class="formdiv">
         <form>
-            FORMULÄR saknas
-
+            <label for="frakt">Fraktalternativ</label>
+            <select name="frakt" id="frakt">
+                <option value="hemleverans">Standard frakt 3-5 dagar</option>
+                <option value="ombud">Express frakt 1-3 dagar</option>
+            </select>
+            <br>
+            <label for="paymentoptions">Betalningsalternativ</label>
+            <select name="paymentoptions" id="paymentoptions">
+                <option value="visa">Visa</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+            <br>
+            <label for="firstname">Förnamn</label>
+            <input type="text" name="firstname" id="firstname">
+            <br>
+            <label for="lastname">Efternamn</label>
+            <input type="text" name="lastname" id="lastname">
+            <br>
+            <label for="cardnumber">Betalkort</label>
+            <input type="text" name="cardnumber" id="cardnumber">
+            <br>
+            <label for="expirationDate">Förfallodatum</label>
+            <input type="date" name="expirationDate" id="expirationDate">
+            <br>
+            <label for="csv">CSV</label>
+            <input type="text" name="csv" id="csv">
+            <br>
             <button onclick="pay()">Betala!</button>
         </form>
     </div>
